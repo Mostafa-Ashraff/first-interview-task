@@ -8,12 +8,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --txt-prim: rgb(14, 13, 12);
+}
+
 body{
     width: 100%;
     background: #e4dcd1;
-    color: rgb(14, 13, 12);
-    font-family: 'Poiret One', cursive;
-    /*font-family: 'Oswald', sans-serif;*/
+    color: var(--txt-prim);
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
 }
 
 nav{
@@ -25,6 +34,10 @@ nav{
     align-items: center;
     text-transform: uppercase;
     
+}
+
+.nav > div, .hero-container > div{
+    opacity: 0;
 }
 
 .nav-item {
@@ -116,7 +129,9 @@ img {
 }
 
 .title{
+
    /* font-family: 'Fleur De Leah', cursive;*/
+    opacity: 0;
     font-family: 'playball', cursive;
     width: 100%;
     text-align: center;
@@ -176,43 +191,48 @@ img {
 	left: 80px;
     }
 
-/*
-aside {
+    .arrow-down{
+        cursor: pointer;
+        opacity: 0;
+        width: 50px;
+        position: absolute;
+        height: 50px;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid var(--txt-prim);
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+}
 
-	position: absolute;
-	top: 20%;
-	right: 0.4em;
-	transform: translate(-50%, -50%);
-	font-size: 40px;
-	color: transparent;
-	-webkit-text-stroke: 1px rgb(117, 113, 113);
-    }
-    
-    .projects {
-	position: absolute;
-	bottom: 10%;
-	left: 10%;
-	transform: translate(-50%, -50%);
-	text-transform: uppercase;
+/**********/
 
+.features{
+    min-block-size: 100%;
+    overflow: hidden;
+}
 
-    }
-    
-    .img-nav {
-	position: absolute;
-	right: 10%;
-	bottom: 13%;
-	transform: translate(-50%, -50%);
-	text-transform: uppercase;
-	color: #000;
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.side-txt{
+    width: 30%;
+    font-size: 15rem;
+    font-weight: 800;
+}
 
-    }
-    
-    .next {
-	position: relative;
-	top: 40px;
-	left: 80px;
-
-
-    }*/
+.side-txt p{
+    line-height: 13rem;
+    -webkit-text-stroke: 2px var(--txt-prim);
+    color: transparent;
+}
