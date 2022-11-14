@@ -361,4 +361,46 @@ body {
   filter: grayscale(100%) sepia(20%) brightness(80%);
 }
 
+.marquee {
+  display: flex;
+  overflow: hidden;
+  gap: 2%;
+  position: relative;
+  user-select: none;
+  text-transform: uppercase;
+}
+.marquee .marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 2%;
+  height: 10rem;
+  background-color: #e4dcd1;
+  color: #0d0e0c;
+  font-size: 8rem;
+  font-weight: 800;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(-102%);
+    -webkit-transform: translateX(-102%);
+    -moz-transform: translateX(-102%);
+    -ms-transform: translateX(-102%);
+    -o-transform: translateX(-102%);
+  }
+  to {
+    transform: translateX(98%);
+    -webkit-transform: translateX(98%);
+    -moz-transform: translateX(98%);
+    -ms-transform: translateX(98%);
+    -o-transform: translateX(98%);
+  }
+}
+.marquee .scroll {
+  animation-delay: -20;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+}
+
 /*# sourceMappingURL=/style.ff1c4cab.css.map */

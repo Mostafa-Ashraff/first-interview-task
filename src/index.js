@@ -89,7 +89,7 @@ words.forEach((word)=>{
         duration: 1,
         scrollTrigger: {
             trigger: word,
-            markers: true,
+            
             scrub: 1,
             start: "top center",
             end: "bottom 80%",

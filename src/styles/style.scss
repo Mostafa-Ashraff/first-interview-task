@@ -373,3 +373,46 @@ body {
       filter: grayscale(100%) sepia(20%) brightness(80%);
     }
   
+
+    .marquee{
+        display: flex;
+        overflow: hidden;
+        gap: 2%;
+        position: relative;
+        user-select: none;
+        text-transform: uppercase;
+
+        .marquee-content{
+            flex-shrink: 0;
+            display: flex;
+            justify-content:space-around;
+            min-width: 100%;
+            gap: 2%;
+            height: 10rem;
+            background-color: #e4dcd1;
+            color: #0d0e0c;
+            font-size: 8rem;
+            font-weight: 800;
+        }
+        
+        @keyframes scroll {
+            from{
+                transform: translateX(-100% - 2%);
+                -webkit-transform: translateX(-100% - 2%);
+                -moz-transform: translateX(-100% - 2%);
+                -ms-transform: translateX(-100% - 2%);
+                -o-transform: translateX(-100% - 2%);
+}to{
+                transform: translateX(calc(100% - 2%));
+                -webkit-transform: translateX(calc(100% - 2%));
+                -moz-transform: translateX(calc(100% - 2%));
+                -ms-transform: translateX(calc(100% - 2%));
+                -o-transform: translateX(calc(100% - 2%));
+}
+        }
+        .scroll {
+            animation-delay: -20;
+            animation: scroll 20s linear infinite;
+            -webkit-animation: scroll 20s linear infinite;
+}
+    }
