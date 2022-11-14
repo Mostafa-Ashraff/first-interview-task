@@ -1,23 +1,46 @@
 {
-  "name": "task",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "final",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bezier-easing": "^2.1.0",
-    "bindall-standalone": "^1.0.5",
-    "lethargy": "^1.0.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "classnames": "^2.3.2",
+    "gsap": "^3.11.3",
     "locomotive-scroll": "^4.1.4",
-    "object-assign": "^4.1.1",
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.56.1",
     "smooth-scrollbar": "^8.8.1",
-    "smoothscroll-polyfill": "^0.4.4",
-    "tiny-emitter": "^1.2.0",
-    "virtual-scroll": "^1.5.2"
+    "smooth-scrollbar-react": "^2.3.0",
+    "split-type": "^0.3.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

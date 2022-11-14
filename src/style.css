@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-prim: #0e0d0c;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #e4dcd1;
+    color: var(--txt-prim);
+    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+nav{
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+.nav > div, .hero-container > div{
+    opacity: 0;
+}
+
+.nav-item {
+	flex: 1;
+    }
+    
+    .nav-left {
+	text-align: left;
+	margin-left: 4em;
+    }
+    
+    .nav-center {
+	text-align: center;
+    }
+    
+    .nav-right {
+        text-align: right;
+        margin-right: 4em;
+    }
+    
+    .nav-link {
+	padding: 0 30px;
+    }
+
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-img {
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh
+}
+
+.wrapper-img>div:last-of-type{
+    overflow: hidden;
+}
+
+img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    background-color: #e4dcd1;
+    opacity: 1;
+    width: 1000px;
+    height: 164vh;
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    z-index: 1;
+}
+
+.images {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 400px;
+	background: black;
+}
+
+.left {
+    background: url('../src/imgs/left.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.right {
+    background: url('../src/imgs/r1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo{
+    font-family: 'playball', cursive;
+}
+
+.title{
+
+   /* font-family: 'Fleur De Leah', cursive;*/
+    opacity: 0;
+    font-family: 'playball', cursive;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.title .char {
+    opacity: 0;
+	display: inline-block;
+	line-height: 1em;
+}
+
+.title .char:nth-of-type(8){
+	margin-left: 10px;
+}
+
+
+.sidebar-text {
+
+	position: absolute;
+	top: 20%;
+	right: 0.4em;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: transparent;
+	-webkit-text-stroke: 1px rgb(117, 113, 113);
+    }
+    
+    .projects {
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+    }
+    
+    .img-nav {
+	position: absolute;
+	right: 10%;
+	bottom: 13%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	color: #000;
+    }
+    
+    .next {
+	position: relative;
+	top: 40px;
+	left: 80px;
+    }
+
+    .arrow-down{
+        cursor: pointer;
+        opacity: 0;
+        width: 50px;
+        position: absolute;
+        height: 50px;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid var(--txt-prim);
+        border-top: none;
+        border-left: none;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+}
+
+/**********/
+
+.features{
+    min-block-size: 100%;
+    overflow: hidden;
+    height: 140vh;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.side-txt{
+    width: 35%;
+    font-size: 15rem;
+    font-weight: 800;
+}
+
+.side-txt p{
+    line-height: 13.8rem;
+    -webkit-text-stroke: 2px var(--txt-prim);
+    color: transparent;
+}
+
+.side-txt p .word{ 
+    background: linear-gradient(to right,var(--txt-prim) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
